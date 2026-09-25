@@ -1,5 +1,5 @@
 # 🌿 Sakinah (سكينة) — Quranic Emotional Support Web App
-
+https://sakinahh-9cya.onrender.com/#
 > *"Unquestionably, by the remembrance of Allah hearts are assured."* — Surah Ar-Ra'd [13:28]
 
 **Sakinah** is a calm, minimal, full-stack MERN application that offers spiritual solace and emotional reassurance. A user selects what their heart is experiencing, and the application fetches and displays a relevant Quran verse (Arabic Uthmani text + English translation + Surah/Ayah reference) live from the free public Quran.com REST API, accompanied by a compassionate human-written reflection and recitations.
