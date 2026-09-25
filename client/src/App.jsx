@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx';
 import EmotionGrid from './components/EmotionGrid.jsx';
 import VerseDisplay from './components/VerseDisplay.jsx';
 import BackgroundSlider, { BACKGROUND_SCENES } from './components/BackgroundSlider.jsx';
+import { API_BASE_URL } from './config/api.js';
 
 // Fallback emotions if server takes a moment on initial start
 import { seedEmotions } from '../../server/seed/data.js';
@@ -21,7 +22,7 @@ export default function App() {
 
   // Fetch emotions list from backend on mount
   useEffect(() => {
-    fetch('/api/emotions')
+    fetch(`${API_BASE_URL}/api/emotions`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success && Array.isArray(data.data) && data.data.length > 0) {
@@ -48,8 +49,8 @@ export default function App() {
 
     try {
       const url = excludeRef
-        ? `/api/verses/${emotionKey}?exclude=${encodeURIComponent(excludeRef)}`
-        : `/api/verses/${emotionKey}`;
+        ? `${API_BASE_URL}/api/verses/${emotionKey}?exclude=${encodeURIComponent(excludeRef)}`
+        : `${API_BASE_URL}/api/verses/${emotionKey}`;
 
       const res = await fetch(url);
       const data = await res.json();

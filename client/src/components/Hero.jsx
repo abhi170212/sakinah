@@ -48,7 +48,7 @@ export default function Hero({ onExploreClick, currentScene }) {
         {currentScene && (
           <div className="mt-8 inline-flex items-center gap-2 text-[11px] sm:text-xs text-slate-300/80 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
             <Clock className="w-3 h-3 text-rose-300" />
-            <span>Atmosphere: {currentScene.title} (Auto-rotates every 5m)</span>
+            <span>Atmosphere: {currentScene.title} (Auto-rotates every 30s)</span>
           </div>
         )}
       </div>
