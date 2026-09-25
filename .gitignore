@@ -1,0 +1,68 @@
+# -----------------------------------------------------------------------------
+# Dependencies (NEVER commit these - they are reinstalled via npm install)
+# -----------------------------------------------------------------------------
+node_modules/
+client/node_modules/
+server/node_modules/
+.pnp
+.pnp.js
+
+# -----------------------------------------------------------------------------
+# Environment & Sensitive Configs (Keep passwords, API keys, URIs private)
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+server/.env.local
+*.env
+
+# -----------------------------------------------------------------------------
+# Production Build Artifacts (Generated automatically during npm run build)
+# -----------------------------------------------------------------------------
+dist/
+dist-ssr/
+client/dist/
+build/
+client/build/
+*.local
+
+# -----------------------------------------------------------------------------
+# Logs & Diagnostic Files
+# -----------------------------------------------------------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# -----------------------------------------------------------------------------
+# Editor & OS Metadata
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -----------------------------------------------------------------------------
+# Temporary Files & Cache
+# -----------------------------------------------------------------------------
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.temp/
+.tmp/
+.mongodb-binaries/

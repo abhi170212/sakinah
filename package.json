@@ -1,0 +1,23 @@
+{
+  "name": "sakinah-root",
+  "version": "1.0.0",
+  "description": "Sakinah — A Quran-verse-based emotional support MERN application",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed"
+  },
+  "keywords": [
+    "quran",
+    "sakinah",
+    "mern",
+    "react",
+    "express",
+    "mongodb",
+    "emotional-support"
+  ],
+  "author": "",
+  "license": "MIT"
+}
