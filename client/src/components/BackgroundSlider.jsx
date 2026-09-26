@@ -21,12 +21,6 @@ export const BACKGROUND_SCENES = [
     location: 'Sunlight over Mountain Peaks',
   },
   {
-    id: 'twilight-flowers',
-    src: '/backgrounds/bg-4.png',
-    title: 'Twilight Floral Meadow',
-    location: 'Nocturnal Bloom & Serenity',
-  },
-  {
     id: 'river-city-mosque',
     src: '/backgrounds/bg-5.jpg',
     title: 'River City Mosque at Dawn',
